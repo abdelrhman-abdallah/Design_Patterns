@@ -1,0 +1,30 @@
+D:\Design Patterns Repo\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.exe
+D:\Design Patterns Repo\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.deps.json
+D:\Design Patterns Repo\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.runtimeconfig.json
+D:\Design Patterns Repo\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.dll
+D:\Design Patterns Repo\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.pdb
+D:\Design Patterns Repo\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.AssemblyReference.cache
+D:\Design Patterns Repo\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Design Patterns Repo\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\Design Patterns Repo\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.AssemblyInfo.cs
+D:\Design Patterns Repo\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Design Patterns Repo\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.dll
+D:\Design Patterns Repo\ConsoleApp1\obj\Debug\net7.0\refint\ConsoleApp1.dll
+D:\Design Patterns Repo\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.pdb
+D:\Design Patterns Repo\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.genruntimeconfig.cache
+D:\Design Patterns Repo\ConsoleApp1\obj\Debug\net7.0\ref\ConsoleApp1.dll
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.exe
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.deps.json
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.runtimeconfig.json
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.dll
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\bin\Debug\net7.0\ConsoleApp1.pdb
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.AssemblyReference.cache
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.AssemblyInfo.cs
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.dll
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\obj\Debug\net7.0\refint\ConsoleApp1.dll
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.pdb
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.genruntimeconfig.cache
+D:\Design Patterns Repo\Repo Folder\Creational_Builder_Pattern\ConsoleApp1\obj\Debug\net7.0\ref\ConsoleApp1.dll
