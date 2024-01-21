@@ -25,7 +25,7 @@ public class Program
         ///then we notice how tiresome, repititive and inscalable it is
         ///so now we will implement the html builder class and see the difference
         ///</summary>
-        ///
+
         string[] words = { "Hello", "World" }; 
 
         sb.Clear();
@@ -40,8 +40,7 @@ public class Program
         Console.WriteLine(sb);
 
         HtmlBuilder builder = new HtmlBuilder("ul");
-        builder.AddElement("li","hello");
-        builder.AddElement("li", "world");
+        builder.AddElement("li","hello").AddElement("li", "world");
         Console.WriteLine(builder);
     }
 }
@@ -56,7 +55,6 @@ public class HtmlElement
     {
 
     }
-
     public HtmlElement(string name, string text) 
     {
         Name = name == null ? throw new ArgumentNullException(paramName:nameof(name)): name;
@@ -66,7 +64,7 @@ public class HtmlElement
     ///<summary>
     ///we will keep using the string builder because its a good builder for strings
     ///</summary>
-
+  
     public string ToStringImpl(int indent) 
     {
         var sb = new StringBuilder();
@@ -101,9 +99,21 @@ public class HtmlBuilder
         this.rootName = rootName;
         root.Name = rootName;
     }
-    public void AddElement(string name,string text) 
+
+    /// <summary>
+    /// Fluent API 
+    /// </summary>
+    /// <param name="name">string</param>
+    /// <param name="text">string</param>
+    /// <returns>
+    /// A builder so that we can chain the add method calls
+    /// this is a well known coding paradigm called fluent API
+    /// </returns>
+    /// 
+    public HtmlBuilder AddElement(string name,string text) 
     {
         root.Elements.Add(new HtmlElement(name,text));
+        return this;
         
     }
     public override string ToString()

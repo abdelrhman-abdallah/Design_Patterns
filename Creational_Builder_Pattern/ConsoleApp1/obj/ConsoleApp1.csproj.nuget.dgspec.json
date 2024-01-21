@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Design Patterns Repo\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "D:\\Design Patterns Repo\\Repo Folder\\Creational_Builder_Pattern\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "D:\\Design Patterns Repo\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "D:\\Design Patterns Repo\\Repo Folder\\Creational_Builder_Pattern\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Design Patterns Repo\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "D:\\Design Patterns Repo\\Repo Folder\\Creational_Builder_Pattern\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "D:\\Design Patterns Repo\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "D:\\Design Patterns Repo\\Repo Folder\\Creational_Builder_Pattern\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\Mohamed\\.nuget\\packages\\",
-        "outputPath": "D:\\Design Patterns Repo\\ConsoleApp1\\obj\\",
+        "outputPath": "D:\\Design Patterns Repo\\Repo Folder\\Creational_Builder_Pattern\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
