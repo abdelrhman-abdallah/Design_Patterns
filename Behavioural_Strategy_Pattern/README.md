@@ -2,8 +2,8 @@
 
 ## 📖 Overview
 
--Pattern: The Strategy design pattern is a behavioral design pattern that enables selecting an algorithm's runtime behavior among a family of algorithms, encapsulating each one, and making them interchangeable.
-Goal: Enhance flexibility and reusability by decoupling algorithmic behavior from the context class.
+- Pattern: The Strategy design pattern is a behavioral design pattern that enables selecting an algorithm's runtime behavior among a family of algorithms, encapsulating each one, and making them interchangeable.
+- Goal: Enhance flexibility and reusability by decoupling algorithmic behavior from the context class.
 
 ### 🧩 Implementation in Code
 
