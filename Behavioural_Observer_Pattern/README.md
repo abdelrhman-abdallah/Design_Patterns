@@ -1,62 +1,71 @@
-# 🦆 Strategy Design Pattern in C#
+# 🌦 Observer Design Pattern in C#
 
 ## 📖 Overview
 
--Pattern: The Strategy design pattern is a behavioral design pattern that enables selecting an algorithm's runtime behavior among a family of algorithms, encapsulating each one, and making them interchangeable.
-Goal: Enhance flexibility and reusability by decoupling algorithmic behavior from the context class.
+- Pattern: The Observer design pattern is a behavioral design pattern that defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+- Goal: Eliminate the need for observers to poll the subject for changes, instead using a push-based notification mechanism.
 
-### 🧩 Implementation in Code
+## 🧩 Implementation in Code
 
-Duck Classes and Behavior Interfaces:
-Abstract behaviors and duck types demonstrating the Strategy pattern.
+WeatherStation (Subject) and Observer Interface:
 
-public interface IFlyBehavior {
-void Fly();
+The WeatherStation acts as the subject, notifying observers about temperature changes.
+Observers implement a common interface to receive updates.
+
+public class WeatherStation {
+private List<IObserver> observers = new List<IObserver>();
+private int temperature;
+
+    public void Add(IObserver observer) {
+        observers.Add(observer);
+    }
+
+    public void Remove(IObserver observer) {
+        observers.Remove(observer);
+    }
+
+    public void Notify() {
+        foreach (var observer in observers) {
+            observer.Update(temperature);
+        }
+    }
+
+    public void SetTemperature(int temp) {
+        temperature = temp;
+        Notify();
+    }
+
 }
 
-public interface IQuackBehavior {
-void Quack();
+public interface IObserver {
+void Update(int temperature);
+}
+Display Classes (Observers):
+
+PhoneDisplay and WindowDisplay act as observers, updating their display based on the subject's state.
+
+public class PhoneDisplay : IObserver {
+private WeatherStation station;
+
+    public PhoneDisplay(WeatherStation station) {
+        this.station = station;
+    }
+
+    public void Update(int temperature) {
+        // Update the display with the new temperature
+    }
+
 }
 
-public class CityDuck : Duck {
-public CityDuck() {
-SetFlyStrategy(new FlyingWithWings());
-SetQuackStrategy(new Quacking());
-}
-// Display method and other implementations
+public class WindowDisplay : IObserver {
+// Similar to PhoneDisplay but for a window-based display
 }
 
-public class WoodenDuck : Duck {
-// WoodenDuck specific implementations
-}
+## 🚀 Applying the Observer Pattern
 
-public class RubberDuck : Duck {
-// RubberDuck specific implementations
-}
-
-Strategy Implementation and Usage:
-Implementing and dynamically changing duck behaviors.
-
-var cityDuck = new CityDuck();
-cityDuck.Display(); // Display city duck
-cityDuck.performFly(); // Perform initial flying behavior
-cityDuck.SetFlyStrategy(new NonFlyingBehaviour()); // Change flying behavior
-cityDuck.performFly(); // Perform new flying behavior
-
-## 🚀 Applying the Strategy Pattern
-
-- Flexibility: The pattern allows for the dynamic change of behavior (e.g., flying, quacking) of duck instances at runtime.
-- Decoupling: Behaviors are encapsulated in separate strategy classes, promoting loose coupling between the behavior and the context (duck classes).
-
-## 🚀 Design Principles in Action
-
-- Favoring Composition Over Inheritance:
-  Duck behaviors are composed using strategy objects rather than being inherited, allowing for more flexible and dynamic behavior changes.
-- Separating What Varies:
-  By encapsulating the varying parts (flying and quacking behaviors) into separate classes, the design isolates the aspects of the application that change from those that stay the same.
-- Coding to an Interface:
-  Ducks interact with behavior strategies through interfaces (IFlyBehavior, IQuackBehavior), not concrete implementations. This approach reduces dependency on specific behavior classes and enhances flexibility.
+- Decoupling: The pattern decouples the WeatherStation from its displays, allowing for independent addition, removal, or modification of observers.
+- Push-Based Notification: The WeatherStation pushes updates to all registered displays, eliminating the need for polling.
 
 ## 📚 Conclusion
 
-The Strategy design pattern, as illustrated with duck behaviors, showcases the power of runtime behavior interchangeability and algorithmic decoupling. This approach leads to more maintainable and flexible code, allowing easy extension and modification of behaviors without altering the context classes.
+The Observer design pattern, as illustrated with the WeatherStation and display classes, showcases an efficient way to manage state changes and notifications in a system. This pattern is especially useful in scenarios where multiple entities need to stay updated with changes in another entity, promoting a clean separation of concerns and reducing dependencies.
